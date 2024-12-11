@@ -17,7 +17,7 @@ public sealed class GrowlWindow : Window
 
         GrowlPanel = new StackPanel
         {
-            VerticalAlignment = VerticalAlignment.Top
+            VerticalAlignment = VerticalAlignment.Bottom
         };
 
         Content = new ScrollViewer

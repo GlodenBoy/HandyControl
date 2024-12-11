@@ -308,7 +308,7 @@ public class Growl : Control
             }
         };
 
-        PanelElement.SetFluidMoveBehavior(panel, ResourceHelper.GetResourceInternal<FluidMoveBehavior>(ResourceToken.BehaviorXY400));
+        // PanelElement.SetFluidMoveBehavior(panel, ResourceHelper.GetResourceInternal<FluidMoveBehavior>(ResourceToken.BehaviorXY400));
     }
 
     private void Update()
@@ -863,7 +863,7 @@ public class Growl : Control
                 {
                     if (GrowlPanel != null && GrowlPanel.Children.Count == 0 && GetIsCreatedAutomatically(GrowlPanel))
                     {
-                        // If the count of children is zero, we need to remove the panel, provided that the panel was created automatically  
+                        // If the count of children is zero, we need to remove the panel, provided that the panel was created automatically
                         RemoveDefaultPanel(GrowlPanel);
                         GrowlPanel = null;
                     }
